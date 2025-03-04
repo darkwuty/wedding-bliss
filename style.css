@@ -1,0 +1,137 @@
+:root {
+  --main-font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  font-family: var(--main-font-family);
+  list-style-type: none;
+  .logo {
+    width: 4%;
+    padding: 1em;
+  }
+}
+header {
+  height: 37em;
+  background-image: linear-gradient(
+      rgba(255, 153, 204, 0.2),
+      rgba(255, 153, 204, 0.3)
+    ),
+    url(assets/img/header_image.avif);
+  background-size: cover;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      padding: 10px;
+    }
+  }
+  div {
+    text-align: center;
+    padding: 9em;
+    color: white;
+    font-weight: bolder;
+    h1 {
+      font-size: 5.5em;
+      font-style: italic;
+    }
+  }
+}
+main {
+  .panier {
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-top: -5em;
+      li {
+        text-align: center;
+        color: white;
+        article#ourWedding {
+          width: 30em;
+          height: 15em;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.4)
+            ),
+            url(assets/img/item1.avif);
+          background-size: cover;
+          p {
+            padding-top: 5em;
+            padding-bottom: 2em;
+          }
+        }
+        article#Reception {
+          width: 30em;
+          height: 15em;
+          background-image: linear-gradient(
+              rgba(255, 153, 204, 0.5),
+              rgba(255, 153, 204, 0.5)
+            ),
+            url(assets/img/item2.avif);
+          background-size: cover;
+          p {
+            padding-top: 5em;
+            padding-bottom: 2em;
+          }
+        }
+      }
+    }
+  }
+  section#commitment {
+    text-align: center;
+    padding-bottom: 10em;
+    h2 {
+      padding-top: 5em;
+      padding-bottom: 1.5em;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    li {
+      img {
+        width: 2em;
+      }
+    }
+  }
+}
+section#memories {
+  height: 25em;
+  background-image: linear-gradient(
+    rgba(255, 153, 204, 0.3),
+    rgba(255, 153, 204, 0.3)
+  ), url(assets/img/main_image.avif);
+  background-position: center;
+  color: white;
+  h2 {
+    text-align: center;
+    padding-top: 3em;
+padding-left: 20em;
+  }
+  div {
+    width: 30em;
+    float: right;
+    padding-right: 13em;
+    padding-top: 2em;
+    line-height: 150%;
+    button {
+        margin-top: 3em;
+        background-color: rgb(255, 153, 204);
+    }
+  }
+  #presta {
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+  }
+}
+footer {
+    background-color: black;
+    border-top: 10px solid rgb(255, 153, 204);
+    color: white;
+}
